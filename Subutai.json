@@ -1,7 +1,7 @@
 {
     "name": "${environmentName}",
     "description": "Drupal 7.x",
-    "version": "0.1",
+    "version": "0.1.2",
     "author": "https://github.com/efeefe",
     "containers": [
         {
@@ -72,11 +72,6 @@
             "type": "string",
             "default": "title"
         },
-        "siteDescription": {
-            "description": "Enter the site's description/tagline",
-            "type": "string",
-            "default": "description"
-        },
         "adminUser": {
             "description": "Site administrator user",
             "type": "string",
@@ -86,12 +81,6 @@
             "description": "Site administrator password",
             "type": "string",
             "default": "admin"
-        },
-        "webContainerName": {
-            "description": "Enter the container's hostname",
-            "type": "string",
-            "default": "drupal",
-            "validation": "[a-zA-Z0-9]+"
         },
         "containerSize": {
             "description": "Container Size",
