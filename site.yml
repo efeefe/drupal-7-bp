@@ -68,7 +68,7 @@
     - name: Download Drupal7 core
       shell: drush dl drupal-7 --destination=/var/www  drupal-project-rename=drupal -y
       args:
-        chdir: /var/www/drupal
+        chdir: /var/www
         creates: /var/www/drupal/index.php
 
     - name: Site Install with drush
