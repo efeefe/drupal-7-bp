@@ -1,7 +1,7 @@
 {
     "name": "${environmentName}",
     "description": "Drupal 7.x",
-    "version": "0.1.2",
+    "version": "0.1.3",
     "author": "https://github.com/efeefe",
     "containers": [
         {
@@ -49,7 +49,7 @@
             {
                 "name": "drupal",
                 "hostnames": [
-                    "${webContainerName}"
+                    "drupal7"
                 ]
             }
         ]
