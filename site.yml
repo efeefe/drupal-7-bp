@@ -82,6 +82,14 @@
         name: /var/www/drupal/index.html
         state: absent
 
+    - name: Change base_url on drupal settings file
+      become: true
+      lineinfile:
+        dest: /var/www/drupal/sites/default/settings.php
+        regexp: "# $base_url = 'http://www.example.com'; "
+        line: "$base_url = 'https://{{ domain_name }}';"
+        state: present
+
     - name: Change ownership
       file: 
         path: /var/www/drupal
