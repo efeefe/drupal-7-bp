@@ -1,7 +1,7 @@
 {
     "name": "${environmentName}",
     "description": "Drupal 7.x",
-    "version": "0.1.3",
+    "version": "0.0.4",
     "author": "https://github.com/efeefe",
     "containers": [
         {
@@ -43,7 +43,11 @@
             {
                 "key": "admin_pwd",
                 "value": "${adminPwd}"
-            }
+            },
+            {
+                "key": "email",
+                "value": "${email}"
+            },
         ],
         "groups": [
             {
@@ -81,6 +85,10 @@
             "description": "Site administrator password",
             "type": "string",
             "default": "admin"
+        },
+        "email": {
+            "description": "Admin email",
+            "type": "string"
         },
         "containerSize": {
             "description": "Container Size",
