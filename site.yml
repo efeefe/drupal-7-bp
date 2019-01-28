@@ -90,6 +90,13 @@
         line: "$base_url = 'https://{{ domain_name }}';"
         state: present
 
+    - name: Add https conf
+      become: true
+      lineinfile:
+        dest: /var/www/drupal/sites/default/settings.php
+        line: "$conf['https'] = TRUE;"
+        state: present
+
     - name: Change ownership
       file: 
         path: /var/www/drupal
