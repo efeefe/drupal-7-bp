@@ -72,7 +72,7 @@
         creates: /var/www/drupal/index.php
 
     - name: Site Install with drush
-      shell: drush si standard --account-name="{{ admin_user }}" --account-pass="{{ admin_pwd }}" --site-name="{{ site_title }}" --db-url=mysql://drupal7:drupal7@localhost/drupal7 -y
+      shell: drush si standard --account-name="{{ admin_user }}" --account-mail="{{ email }}" --account-pass="{{ admin_pwd }}" --site-name="{{ site_title }}" --db-url=mysql://drupal7:drupal7@localhost/drupal7 -y
       args: 
         chdir: /var/www/drupal
         creates: /var/www/drupal/sites/default/settings.php
