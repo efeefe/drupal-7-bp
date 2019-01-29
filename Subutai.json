@@ -1,7 +1,7 @@
 {
     "name": "${environmentName}",
     "description": "Drupal 7.x",
-    "version": "0.0.4",
+    "version": "0.5",
     "author": "https://github.com/efeefe",
     "containers": [
         {
@@ -46,7 +46,7 @@
             },
             {
                 "key": "email",
-                "value": "${email}"
+                "value": "${adminEmail}"
             },
         ],
         "groups": [
@@ -86,7 +86,7 @@
             "type": "string",
             "default": "admin"
         },
-        "email": {
+        "adminEmail": {
             "description": "Admin email",
             "type": "string"
         },
